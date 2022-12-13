@@ -12,7 +12,7 @@
     </div>
     <br>
     <div>
-      <p>Valor convertido USD {{ contarPalabras }}</p>
+      <p>Valor convertido USD {{ calcular }}</p>
     </div>
 
     <hr />
@@ -63,7 +63,7 @@
     },
     
     computed: {
-    contarPalabras() {
+    calcular() {
       let conversion = this.pesos / this.cotizacion;
 		return conversion
 	}
